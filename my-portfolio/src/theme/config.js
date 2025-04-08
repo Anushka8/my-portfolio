@@ -1,7 +1,10 @@
-// src/theme/config.js
 import { defineConfig } from "@chakra-ui/react";
 
 export const customConfig = defineConfig({
+  fonts: {
+    heading: "Montserrat, sans-serif",
+    body: "Montserrat, sans-serif",
+  },
   theme: {
     breakpoints: {
       sm: "320px",

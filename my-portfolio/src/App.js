@@ -1,28 +1,17 @@
-import {
-  ChakraProvider,
-  createSystem,
-  defaultConfig,
-  Box,
-} from "@chakra-ui/react";
+import { ChakraProvider, createSystem, defaultConfig } from "@chakra-ui/react";
 import { customConfig } from "./theme/config";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import MyTimeline from "./components/MyTimeline";
 
 const system = createSystem(defaultConfig, customConfig);
 
 export default function App() {
   return (
     <ChakraProvider value={system}>
-      {/* 3. Use tokens in components */}
-      <Box color="danger" fontSize="xl" p={6}>
-        Hello from Chakra with my custom system!
-      </Box>
-      {/* Example using custom keyframe: spin */}
-      <Box
-        w="100px"
-        h="100px"
-        bg="danger"
-        animation="spin 2s linear infinite"
-        margin="20px auto"
-      />
+      <Navbar />
+      <HeroSection />
+      <MyTimeline />
     </ChakraProvider>
   );
 }
