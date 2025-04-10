@@ -10,7 +10,8 @@ import {
   Stack,
   useDisclosure,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
   // For toggling the mobile menu
@@ -44,7 +45,7 @@ export default function Navbar() {
         <IconButton
           variant="outline"
           onClick={onToggle}
-          icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+          icon={isOpen ? <IoClose /> : <GiHamburgerMenu />}
           display={{ base: "inline-flex", md: "none" }}
           aria-label="Toggle Navigation"
         />
@@ -53,20 +54,39 @@ export default function Navbar() {
         <HStack spacing={10} display={{ base: "none", md: "flex" }} ml={6}>
           <Link
             href="#about"
+            pl="3"
             letterSpacing="widest"
             _hover={{ textDecoration: "underline" }}
           >
             About
           </Link>
           <Link
-            href="#portfolio"
+            href="#skills"
+            pl="3"
             letterSpacing="widest"
             _hover={{ textDecoration: "underline" }}
           >
-            Portfolio
+            Skills
+          </Link>
+          <Link
+            href="#experience"
+            pl="3"
+            letterSpacing="widest"
+            _hover={{ textDecoration: "underline" }}
+          >
+            Experience
+          </Link>
+          <Link
+            href="#Projects"
+            pl="3"
+            letterSpacing="widest"
+            _hover={{ textDecoration: "underline" }}
+          >
+            Projects
           </Link>
           <Link
             href="#contact"
+            pl="3"
             letterSpacing="widest"
             _hover={{ textDecoration: "underline" }}
           >

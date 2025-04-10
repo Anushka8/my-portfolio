@@ -13,7 +13,7 @@ import { TfiLinkedin, TfiGithub, TfiFacebook } from "react-icons/tfi";
 
 export default function HeroSection() {
   return (
-    <Container maxW="container.xl" py={{ base: 10, md: 16 }} minH="100vh">
+    <Container maxW="container.xl" py={{ base: 10, md: 14 }} minH="100vh">
       <Flex
         direction={{ base: "column", md: "row" }}
         align="center"
@@ -35,7 +35,7 @@ export default function HeroSection() {
 
           <Heading
             as="h2"
-            fontSize={{ base: "0.5rem", md: "1.5rem" }}
+            fontSize={{ base: "1rem", md: "1.5rem" }}
             fontWeight="normal"
             mb={4}
             color="gray"
@@ -89,8 +89,10 @@ export default function HeroSection() {
           p={{ base: 3, md: 8 }}
         >
           <Image
-            src="/assets/my-notion-face-portrait.png"
+            src="my-notion-face-portrait.png"
             alt="Illustration"
+            animationName="bounce, fade-in"
+            animationDuration="slow"
             maxW="400px"
             mx="auto"
           />

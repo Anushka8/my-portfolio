@@ -5,7 +5,7 @@ import { LuCheck, LuPackage, LuShip } from "react-icons/lu";
 
 export default function MyTimeline() {
   return (
-    <Container maxW="container.xl" py={0} minH="100vh" bg="danger">
+    <Container maxW="none" py={0} minH="100vh" bg="danger">
       <Flex
         direction={{ base: "column", md: "row" }}
         align="center"
@@ -81,10 +81,43 @@ export default function MyTimeline() {
                 </Timeline.Indicator>
               </Timeline.Connector>
               <Timeline.Content>
-                <Timeline.Title>Order Delivered</Timeline.Title>
-                <Timeline.Description>
-                  20th May 2021, 10:30am
-                </Timeline.Description>
+                <Timeline.Title>Student Lab Instructor - RIT</Timeline.Title>
+                <Timeline.Description>Aug 2023 - Dec 2023</Timeline.Description>
+                <Text textStyle="sm">
+                  Instructed and mentored 30 students in Advanced Java lab
+                  sessions, covering data structures, algorithms, optimization
+                  techniques, and time-space complexity analysis, leading to a
+                  20% increase in assessment scores.
+                </Text>
+              </Timeline.Content>
+            </Timeline.Item>
+
+            <Timeline.Item>
+              <Timeline.Connector>
+                <Timeline.Separator />
+                <Timeline.Indicator>
+                  <LuCheck />
+                </Timeline.Indicator>
+              </Timeline.Connector>
+              <Timeline.Content>
+                <Timeline.Title>Software Engineer - Capgemini</Timeline.Title>
+                <Timeline.Description>Dec 2019 - May 2022</Timeline.Description>
+                <Text textStyle="sm">
+                  Developed adaptive, schema-driven forms in a web-based
+                  application using MVC architecture, enabling database updates
+                  based on user input and improving system efficiency by 25%.
+                </Text>
+                <Text textStyle="sm">
+                  Designed an ETL pipeline to handle regulatory compliance data,
+                  processing 100K+ pipe-delimited files daily, ensuring data
+                  integrity and adherence to evolving industry standards,
+                  reducing errors by 43%.
+                </Text>
+                <Text textStyle="sm">
+                  Engineered a scalable full-stack registration and amendment
+                  system, implementing modular UI components and backend logic
+                  to reduce deployment cycles by 20%.
+                </Text>
               </Timeline.Content>
             </Timeline.Item>
           </Timeline.Root>
