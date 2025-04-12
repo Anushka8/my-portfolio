@@ -14,12 +14,15 @@ export const customConfig = defineConfig({
     },
     tokens: {
       colors: {
-        red: "#EE0F0F",
+        // red: "#EE0F0F",
+        orange: "#C1D8C3",
+        ghost_white: "F7F7FF",
       },
     },
     semanticTokens: {
       colors: {
-        danger: { value: "{colors.red}" },
+        danger: { value: "{colors.orange}" },
+        background: { value: "colors.ghost_white" },
       },
     },
     keyframes: {

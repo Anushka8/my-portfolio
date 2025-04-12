@@ -2,10 +2,9 @@ import { ChakraProvider, createSystem, defaultConfig } from "@chakra-ui/react";
 import { customConfig } from "./theme/config";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import Skills from "./components/Skills";
-// import MyTimeline from "./components/MyTimeline";
+import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
-import Projects from "./components/Projects";
+import ProjectsSection from "./components/ProjectsSection";
 
 const system = createSystem(defaultConfig, customConfig);
 
@@ -14,9 +13,9 @@ export default function App() {
     <ChakraProvider value={system}>
       <Navbar />
       <HeroSection />
-      <Skills />
+      <SkillsSection />
       <ExperienceSection />
-      <Projects />
+      <ProjectsSection />
     </ChakraProvider>
   );
 }

@@ -4,12 +4,13 @@ import {
   Flex,
   Heading,
   Text,
-  Button,
   Stack,
   Image,
   Container,
 } from "@chakra-ui/react";
-import { TfiLinkedin, TfiGithub, TfiFacebook } from "react-icons/tfi";
+import { TfiLinkedin } from "react-icons/tfi";
+import { FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 export default function HeroSection() {
   return (
@@ -51,48 +52,51 @@ export default function HeroSection() {
 
           {/* Social buttons */}
           <Stack direction="row" spacing={4}>
-            <Button
+            <Box
               as="a"
-              href="#"
-              leftIcon={<TfiLinkedin />}
-              colorScheme="linkedin"
-              variant="solid"
+              href="https://www.linkedin.com/in/anushka-churi"
+              target="_blank"
+              rel="noopener noreferrer"
+              p={4}
+              bg="blue.200"
             >
-              LinkedIn
-            </Button>
-            <Button
+              <TfiLinkedin size="24px" color="white" />
+            </Box>
+
+            <Box
               as="a"
-              href="#"
-              leftIcon={<TfiGithub />}
-              colorScheme="github"
-              variant="solid"
+              href="https://github.com/Anushka8"
+              target="_blank"
+              rel="noopener noreferrer"
+              p={4}
+              bg="gray.200"
             >
-              Facebook
-            </Button>
-            <Button
+              <FaGithub size="24px" />
+            </Box>
+
+            <Box
               as="a"
-              href="#"
-              leftIcon={<TfiFacebook />}
-              colorScheme="facebook"
-              variant="solid"
+              href="https://github.com/Anushka8"
+              target="_blank"
+              rel="noopener noreferrer"
+              p={4}
+              bg="red.200"
             >
-              Twitter
-            </Button>
+              <SiGmail size="24px" />
+            </Box>
           </Stack>
         </Box>
 
         {/* Right side: illustration */}
         <Box
           flex="1"
-          mt={{ base: 8, md: 0 }}
+          mt={{ base: 8, md: 16 }}
           textAlign="center"
           p={{ base: 3, md: 8 }}
         >
           <Image
             src="my-notion-face-portrait.png"
             alt="Illustration"
-            animationName="bounce, fade-in"
-            animationDuration="slow"
             maxW="400px"
             mx="auto"
           />

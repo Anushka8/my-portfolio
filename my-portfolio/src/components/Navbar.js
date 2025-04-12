@@ -20,7 +20,11 @@ export default function Navbar() {
   return (
     <Box
       as="nav"
-      /* Example: if you defined "danger" in your custom config, you can do bg="danger" */
+      position="fixed"
+      top="0"
+      left="0"
+      right="0"
+      zIndex="modal"
       bg="white"
       color="black"
       boxShadow="sm"
