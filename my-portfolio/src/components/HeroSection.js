@@ -27,14 +27,20 @@ export default function HeroSection() {
         p={{ base: 10, md: 16 }}
       >
         {/* Left side: text content */}
-        <Box flex="1" mr={{ md: 6 }} p={{ base: 3, md: 8 }}>
+        <Box
+          flex="1"
+          mr={{ md: 6 }}
+          p={{ base: 6, md: 8 }}
+          // textAlign={{ base: "center", md: "left" }}
+        >
           <Heading
             as="h1"
             fontSize={{ base: "4rem", md: "6rem" }}
-            whiteSpace="nowrap"
+            lineHeight="1.0"
+            // whiteSpace="nowrap"
             mb={4}
             color="calmpurple"
-            py={{ base: 2, md: 4 }}
+            py={{ base: 4, md: 4 }}
           >
             Anushka Churi
           </Heading>
