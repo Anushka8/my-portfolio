@@ -111,7 +111,6 @@ export default function SkillsSection() {
         Skills
       </Heading>
 
-      {/* Display all skill cards; if selectedCategory is "all" or a skill's category matches the filter, it's highlighted */}
       <Wrap
         spacing={4}
         justify="center"
