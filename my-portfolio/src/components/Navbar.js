@@ -17,6 +17,15 @@ export default function Navbar() {
   // For toggling the mobile menu
   const { isOpen, onToggle } = useDisclosure();
 
+  // Define navigation links (consistent for desktop and mobile)
+  const navLinks = [
+    { label: "About", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Experience", href: "#experience" },
+    { label: "Projects", href: "#projects" },
+    { label: "Contact", href: "#contact" },
+  ];
+
   return (
     <Box
       as="nav"
@@ -37,7 +46,7 @@ export default function Navbar() {
           as="h1"
           size="md"
           letterSpacing="widest"
-          color="danger"
+          color="calmpurple"
           fontWeight="extrabold"
         >
           anushka
@@ -49,53 +58,30 @@ export default function Navbar() {
         <IconButton
           variant="outline"
           onClick={onToggle}
-          icon={isOpen ? <IoClose /> : <GiHamburgerMenu />}
+          icon={
+            isOpen ? (
+              <IoClose size="24px" color="black" />
+            ) : (
+              <GiHamburgerMenu size="24px" color="black" />
+            )
+          }
           display={{ base: "inline-flex", md: "none" }}
           aria-label="Toggle Navigation"
         />
 
         {/* Horizontal links on medium+ screens */}
         <HStack spacing={10} display={{ base: "none", md: "flex" }} ml={6}>
-          <Link
-            href="#about"
-            pl="3"
-            letterSpacing="widest"
-            _hover={{ textDecoration: "underline" }}
-          >
-            About
-          </Link>
-          <Link
-            href="#skills"
-            pl="3"
-            letterSpacing="widest"
-            _hover={{ textDecoration: "underline" }}
-          >
-            Skills
-          </Link>
-          <Link
-            href="#experience"
-            pl="3"
-            letterSpacing="widest"
-            _hover={{ textDecoration: "underline" }}
-          >
-            Experience
-          </Link>
-          <Link
-            href="#Projects"
-            pl="3"
-            letterSpacing="widest"
-            _hover={{ textDecoration: "underline" }}
-          >
-            Projects
-          </Link>
-          <Link
-            href="#contact"
-            pl="3"
-            letterSpacing="widest"
-            _hover={{ textDecoration: "underline" }}
-          >
-            Contact
-          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              pl="3"
+              letterSpacing="widest"
+              _hover={{ textDecoration: "underline" }}
+            >
+              {link.label}
+            </Link>
+          ))}
         </HStack>
       </Flex>
 
@@ -103,15 +89,16 @@ export default function Navbar() {
       {isOpen && (
         <Box pb={4} display={{ md: "none" }}>
           <Stack as="nav" spacing={4}>
-            <Link href="#about" _hover={{ textDecoration: "underline" }}>
-              About
-            </Link>
-            <Link href="#portfolio" _hover={{ textDecoration: "underline" }}>
-              Portfolio
-            </Link>
-            <Link href="#contact" _hover={{ textDecoration: "underline" }}>
-              Contact
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={onToggle} // close menu when link is clicked
+                _hover={{ textDecoration: "underline" }}
+              >
+                {link.label}
+              </Link>
+            ))}
           </Stack>
         </Box>
       )}

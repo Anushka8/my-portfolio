@@ -29,13 +29,15 @@ export default function ExperienceItem({
         mr={{ base: 0, md: 8 }}
         mb={{ base: 4, md: 0 }}
       >
-        <Text fontWeight="bold">{date}</Text>
+        <Text fontWeight="bold">
+          {title} - {company}
+        </Text>
       </Box>
 
       {/* Right column: Title, Company, Description, Skills */}
       <Box flex="1">
         <Heading as="h3" size="md" mb={2}>
-          {title} - {company}
+          {date}
         </Heading>
         <Text mb={3}>{description}</Text>
 

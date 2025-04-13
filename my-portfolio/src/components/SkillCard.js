@@ -4,18 +4,20 @@ import { Box, Text } from "@chakra-ui/react";
 export default function SkillCard({ skill, category, isHighlighted }) {
   // Set pastel background colors based on category.
   let bgColor;
+  let color;
   switch (category) {
     case "frontend":
-      bgColor = "pink.100";
+      bgColor = "calmpurple";
       break;
     case "backend":
-      bgColor = "blue.100";
+      bgColor = "lightjeans";
       break;
     case "frameworks":
-      bgColor = "green.100";
+      bgColor = "darkjeans";
+      color = "white";
       break;
     case "CI/CD":
-      bgColor = "purple.100";
+      bgColor = "red";
       break;
     default:
       bgColor = "gray.100";
@@ -27,6 +29,7 @@ export default function SkillCard({ skill, category, isHighlighted }) {
   return (
     <Box
       bg={bgColor}
+      color={color}
       borderRadius="3rem" // Fully rounded, creating a circle.
       w="100px" // Fixed width for a smaller badge.
       h="50px" // Fixed height for a smaller badge.

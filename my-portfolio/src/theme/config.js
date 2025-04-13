@@ -16,13 +16,19 @@ export const customConfig = defineConfig({
       colors: {
         // red: "#EE0F0F",
         orange: "#C1D8C3",
-        ghost_white: "F7F7FF",
+        ghost_white: "#F7F7FF",
+        purple: "#8975DA",
+        darkblue: "#020128",
+        blue: "#3000F2",
       },
     },
     semanticTokens: {
       colors: {
         danger: { value: "{colors.orange}" },
-        background: { value: "colors.ghost_white" },
+        ghostwhite: { value: "colors.ghost_white" },
+        calmpurple: { value: "colors.purple" },
+        lightjeans: { value: "colors.blue" },
+        darkjeans: { value: "colors.darkblue" },
       },
     },
     keyframes: {

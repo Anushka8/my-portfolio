@@ -9,12 +9,17 @@ import {
   Container,
 } from "@chakra-ui/react";
 import { TfiLinkedin } from "react-icons/tfi";
-import { FaGithub } from "react-icons/fa";
+import { TbBrandGithubFilled } from "react-icons/tb";
 import { SiGmail } from "react-icons/si";
 
 export default function HeroSection() {
   return (
-    <Container maxW="container.xl" py={{ base: 10, md: 14 }} minH="100vh">
+    <Container
+      maxW="container.xl"
+      py={{ base: 10, md: 14 }}
+      minH="100vh"
+      id="about"
+    >
       <Flex
         direction={{ base: "column", md: "row" }}
         align="center"
@@ -25,10 +30,10 @@ export default function HeroSection() {
         <Box flex="1" mr={{ md: 6 }} p={{ base: 3, md: 8 }}>
           <Heading
             as="h1"
-            fontSize={{ base: "3rem", md: "6rem" }}
+            fontSize={{ base: "4rem", md: "6rem" }}
             whiteSpace="nowrap"
             mb={4}
-            color="danger"
+            color="calmpurple"
             py={{ base: 2, md: 4 }}
           >
             Anushka Churi
@@ -58,7 +63,7 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               p={4}
-              bg="blue.200"
+              bg="lightjeans"
             >
               <TfiLinkedin size="24px" color="white" />
             </Box>
@@ -69,9 +74,9 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               p={4}
-              bg="gray.200"
+              bg="black"
             >
-              <FaGithub size="24px" />
+              <TbBrandGithubFilled size="24px" color="white" />
             </Box>
 
             <Box
@@ -80,9 +85,9 @@ export default function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               p={4}
-              bg="red.200"
+              bg="red"
             >
-              <SiGmail size="24px" />
+              <SiGmail size="24px" color="white" />
             </Box>
           </Stack>
         </Box>

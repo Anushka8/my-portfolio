@@ -5,8 +5,18 @@ import ExperienceItem from "./ExperienceItem";
 
 export default function ExperienceSection() {
   return (
-    <Container maxW="container.md" py={10} minH="100vh">
-      <Heading as="h1" size="lg" mb={8}>
+    <Container maxW="container.md" py={10} minH="100vh" id="experience">
+      {/* <Heading as="h1" size="lg" mb={8}>
+        Experience
+      </Heading> */}
+      <Heading
+        as="h1"
+        fontSize={{ base: "1.5rem", md: "4rem" }}
+        whiteSpace="nowrap"
+        mb={4}
+        py={{ base: 2, md: 4 }}
+        color="calmpurple"
+      >
         Experience
       </Heading>
 

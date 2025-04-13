@@ -49,10 +49,7 @@ export default function ProjectCard({ project }) {
           alignItems="center"
           p={4}
         >
-          <Text mb={4} fontSize="lg" fontWeight="bold">
-            Skills
-          </Text>
-          <SimpleGrid columns={{ base: 2, md: 3 }} spacing={2}>
+          <SimpleGrid columns={{ base: 2, md: 3 }} spacing={2} p={"2rem"}>
             {project.skills.map((skill) => (
               <Box
                 key={skill}
