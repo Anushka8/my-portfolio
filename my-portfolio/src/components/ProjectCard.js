@@ -82,6 +82,7 @@ export default function ProjectCard({
 }) {
   return (
     <Box
+      w="25rem"
       as="a" // make the card clickable as a link
       href={repo}
       target="_blank"
@@ -101,7 +102,15 @@ export default function ProjectCard({
 
       <Box p={4}>
         {/* Project Title */}
-        <Heading as="h3" size="md" mb={2}>
+        <Heading
+          as="h3"
+          fontSize={{ base: "0.5rem", md: "1.25rem" }}
+          // letterSpacing="widest"
+          size="md"
+          mb={2}
+          textAlign={"center"}
+          color="lighterjeans"
+        >
           {title}
         </Heading>
 

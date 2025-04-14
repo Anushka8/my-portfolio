@@ -7,17 +7,19 @@ export default function SkillCard({ skill, category, isHighlighted }) {
   let color;
   switch (category) {
     case "frontend":
-      bgColor = "calmpurple";
+      bgColor = "yellow";
       break;
     case "backend":
-      bgColor = "lightjeans";
+      bgColor = "lightestjeans";
+      color = "white";
       break;
     case "frameworks":
-      bgColor = "darkjeans";
+      bgColor = "lighterjeans";
       color = "white";
       break;
     case "CI/CD":
-      bgColor = "red";
+      bgColor = "darkerjeans";
+      color = "white";
       break;
     default:
       bgColor = "gray.100";

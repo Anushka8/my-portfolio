@@ -66,7 +66,7 @@ export default function ProjectsSection() {
       description:
         "Designed and optimized a distributed data storage system using CassandraDB with query-first schema design and batch processing to enhance scalability and reduce query latency, developed a RESTful API with a React-based frontend to improve data processing speed and enhance health metric tracking efficiency.",
       image:
-        "https://thumbs.dreamstime.com/b/electronic-healthcare-patient-health-record-doctor-helping-people-ehr-computer-medical-personal-profile-prescription-utter-214635009.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
       skills: ["CassandraDB", "Flask", "React"],
       repo: "https://github.com/Anushka8/HealthTracker",
     },
@@ -75,7 +75,7 @@ export default function ProjectsSection() {
       description:
         "Led a Manhattan crash data study that employed Python for visualization and spatial analysis, conducted data cleaning and feature selection with Pandas, and applied DBSCAN and KMeans clustering to uncover accident patterns and hotspots, significantly boosting data processing efficiency, accuracy, and clustering performance.",
       image:
-        "https://www.systematica.net/content/uploads/2018/07/Systematica-Expertise-06-Traffic-Data-Analysis.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
       skills: ["Python", "Pandas", "Seaborn", "DBSCAN", "KMeans"],
       repo: "https://github.com/YourUsername/ProjectTwo",
     },
@@ -84,7 +84,7 @@ export default function ProjectsSection() {
       description:
         "Developed a gesture recognition system leveraging template matching with an SVM model to achieve 87% accuracy, enhanced hand detection using background subtraction, ROI definition, and skin masking for a 30% improvement, and explored adaptive thresholding with CNN enhancements to increase model robustness by 25%.",
       image:
-        "https://media.istockphoto.com/id/1192618623/vector/hand-game-rock-paper-scissors-gesture-illustration-in-line-art-style-for-popular-hand-game.jpg?s=612x612&w=0&k=20&c=9VsdMuzRgZWr5aPbGMRfSQ8TF1QncVTH8295gNZ6D70=",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
       skills: ["OpenCV", "Python", "SVM", "CNN"],
       repo: "https://github.com/btn6364/CSCI-720-Project",
     },
@@ -94,15 +94,15 @@ export default function ProjectsSection() {
     <Container maxW="none" py={16} bg="ghostwhite">
       <Heading
         as="h1"
-        fontSize={{ base: "1.5rem", md: "4rem" }}
+        fontSize={{ base: "4rem", md: "4rem" }}
         whiteSpace="nowrap"
         mb={4}
         py={{ base: 2, md: 4 }}
-        color="calmpurple"
+        color="lighterjeans"
       >
         Projects
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} py="2rem">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

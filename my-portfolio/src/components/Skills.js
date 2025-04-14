@@ -17,9 +17,12 @@ export const skillsData = [
   { name: "Pandas", category: "frameworks" },
   { name: "PyTorch", category: "frameworks" },
   { name: "OpenCV", category: "frameworks" },
+  { name: "Linux", category: "frameworks" },
+  { name: "RTOS", category: "frameworks" },
 
   // CI/CD: tools for version control, containerization, and project automation
   { name: "Git", category: "CI/CD" },
+  { name: "Bitbucket", category: "CI/CD" },
   { name: "Docker", category: "CI/CD" },
   { name: "Hatch", category: "CI/CD" },
   { name: "PyInfra", category: "CI/CD" },

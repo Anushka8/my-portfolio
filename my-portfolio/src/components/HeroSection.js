@@ -35,11 +35,11 @@ export default function HeroSection() {
         >
           <Heading
             as="h1"
-            fontSize={{ base: "4rem", md: "6rem" }}
+            fontSize={{ base: "5rem", md: "6rem" }}
             lineHeight="1.0"
             // whiteSpace="nowrap"
             mb={4}
-            color="calmpurple"
+            color="lighterjeans"
             py={{ base: 4, md: 4 }}
           >
             Anushka Churi

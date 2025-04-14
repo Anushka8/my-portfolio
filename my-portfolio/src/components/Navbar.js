@@ -46,7 +46,7 @@ export default function Navbar() {
           as="h1"
           size="md"
           letterSpacing="widest"
-          color="calmpurple"
+          color="lighterjeans"
           fontWeight="extrabold"
         >
           anushka

@@ -77,9 +77,9 @@ import {
   Container,
   Heading,
   Button,
-  ButtonGroup,
   Wrap,
   WrapItem,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import SkillCard from "./SkillCard";
 import { skillsData } from "./Skills";
@@ -92,23 +92,16 @@ export default function SkillsSection() {
   const categories = ["frontend", "backend", "frameworks", "CI/CD"];
 
   return (
-    <Container
-      maxW="none"
-      minH="100vh"
-      py="5rem"
-      textAlign="center"
-      bg="ghostwhite"
-      id="skills"
-    >
+    <Container maxW="none" minH="100vh" py="5rem" bg="ghostwhite" id="skills">
       <Heading
         as="h1"
-        fontSize={{ base: "1.5rem", md: "4rem" }}
+        fontSize={{ base: "4rem", md: "4rem" }}
         whiteSpace="nowrap"
         mb={4}
         py={{ base: 2, md: 4 }}
-        color="calmpurple"
+        color="lighterjeans"
       >
-        Skills
+        SKILLS
       </Heading>
 
       <Wrap
@@ -135,23 +128,26 @@ export default function SkillsSection() {
 
       {/* Filter Buttons: When hovering over a button, set the state to that category.
           onMouseLeave on the button group resets the filter to "all". */}
-      <ButtonGroup
-        spacing={4}
+      <SimpleGrid
+        columns={{ base: 2, md: 4 }}
+        spacing={3}
         mb={6}
-        p="2rem"
+        // p="1rem"
         onMouseLeave={() => setSelectedCategory("all")}
       >
         {categories.map((cat) => (
           <Button
+            letterSpacing="widest"
             key={cat}
+            variant="link"
+            textDecoration={selectedCategory === cat ? "underline" : "none"}
             colorScheme={selectedCategory === cat ? "teal" : "gray"}
-            variant={selectedCategory === cat ? "solid" : "outline"}
             onMouseOver={() => setSelectedCategory(cat)}
           >
             {cat.charAt(0).toUpperCase() + cat.slice(1)}
           </Button>
         ))}
-      </ButtonGroup>
+      </SimpleGrid>
     </Container>
   );
 }
