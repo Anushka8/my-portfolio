@@ -82,7 +82,7 @@ export default function ProjectCard({
 }) {
   return (
     <Box
-      w="25rem"
+      // w="25rem"
       as="a" // make the card clickable as a link
       href={repo}
       target="_blank"

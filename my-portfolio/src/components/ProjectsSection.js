@@ -91,7 +91,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <Container maxW="none" py={16} bg="ghostwhite">
+    <Container maxW="none" py={16} bg="ghostwhite" id="projects">
       <Heading
         as="h1"
         fontSize={{ base: "4rem", md: "4rem" }}
