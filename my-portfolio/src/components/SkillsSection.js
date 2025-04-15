@@ -101,7 +101,7 @@ export default function SkillsSection() {
         py={{ base: 2, md: 4 }}
         color="lighterjeans"
       >
-        SKILLS
+        Skills
       </Heading>
 
       <Wrap

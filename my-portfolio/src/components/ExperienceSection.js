@@ -79,7 +79,7 @@ export default function ExperienceSection() {
         Experience
       </Heading>
 
-      <Stack spacing={6} py="2rem">
+      <Stack spacing={6} py="4rem">
         <ExperienceAccordionItem
           date="Aug 2024 - Dec 2024"
           title="Software Verification Engineer"
