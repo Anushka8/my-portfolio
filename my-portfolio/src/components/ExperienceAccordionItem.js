@@ -1,6 +1,14 @@
 // src/components/ExperienceAccordionItem.js
 import React from "react";
-import { Box, Heading, Text, Badge, Stack, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Badge,
+  Wrap,
+  WrapItem,
+  Flex,
+} from "@chakra-ui/react";
 import { Accordion } from "@chakra-ui/react";
 
 export default function ExperienceAccordionItem({
@@ -16,8 +24,8 @@ export default function ExperienceAccordionItem({
         <Accordion.ItemTrigger asChild>
           <Box
             as="button"
-            h="8rem"
-            w="full"
+            // h="8rem"
+            // minW="100vh"
             textAlign="left"
             p={4}
             cursor="pointer"
@@ -40,7 +48,7 @@ export default function ExperienceAccordionItem({
               </Box>
 
               {/* Right side: Skills */}
-              <Stack
+              {/* <Stack
                 direction="row"
                 spacing={2}
                 ml={{ base: 0, md: "auto" }} // pushes badges to the right on md+
@@ -51,7 +59,20 @@ export default function ExperienceAccordionItem({
                     {skill}
                   </Badge>
                 ))}
-              </Stack>
+              </Stack> */}
+              <Wrap
+                spacing={2}
+                ml={{ base: 0, md: "auto" }}
+                mt={{ base: 2, md: 0 }}
+              >
+                {skills.map((skill) => (
+                  <WrapItem key={skill}>
+                    <Badge variant="subtle" colorScheme="blue">
+                      {skill}
+                    </Badge>
+                  </WrapItem>
+                ))}
+              </Wrap>
             </Flex>
           </Box>
         </Accordion.ItemTrigger>

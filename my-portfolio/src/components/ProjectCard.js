@@ -104,7 +104,7 @@ export default function ProjectCard({
         {/* Project Title */}
         <Heading
           as="h3"
-          fontSize={{ base: "0.5rem", md: "1.25rem" }}
+          fontSize={{ base: "1.25rem", md: "1.25rem" }}
           // letterSpacing="widest"
           size="md"
           mb={2}
