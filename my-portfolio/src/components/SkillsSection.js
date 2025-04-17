@@ -80,6 +80,7 @@ import {
   Wrap,
   WrapItem,
   SimpleGrid,
+  Center,
 } from "@chakra-ui/react";
 import SkillCard from "./SkillCard";
 import { skillsData } from "./Skills";
@@ -93,21 +94,22 @@ export default function SkillsSection() {
 
   return (
     <Container maxW="none" minH="100vh" py="5rem" bg="ghostwhite" id="skills">
-      <Heading
-        as="h1"
-        fontSize={{ base: "4rem", md: "4rem" }}
-        whiteSpace="nowrap"
-        mb={4}
-        py={{ base: 2, md: 4 }}
-        color="lighterjeans"
-      >
-        Skills
-      </Heading>
-
+      <Center>
+        <Heading
+          as="h1"
+          fontSize={{ base: "4rem", md: "4rem" }}
+          whiteSpace="nowrap"
+          mb={4}
+          py={{ base: 2, md: 4 }}
+          color="lighterjeans"
+        >
+          Skills
+        </Heading>
+      </Center>
       <Wrap
         spacing={4}
         justify="center"
-        px={{ base: "5rem", md: "10rem" }}
+        px={{ base: "1rem", md: "20rem" }}
         py={{ base: "2.5rem", md: "5rem" }}
       >
         {skillsData.map((skillItem) => {
@@ -130,9 +132,9 @@ export default function SkillsSection() {
           onMouseLeave on the button group resets the filter to "all". */}
       <SimpleGrid
         columns={{ base: 2, md: 4 }}
-        spacing={3}
+        spacing={4}
         mb={6}
-        // p="1rem"
+        px={{ base: "5rem", md: "30rem" }}
         onMouseLeave={() => setSelectedCategory("all")}
       >
         {categories.map((cat) => (

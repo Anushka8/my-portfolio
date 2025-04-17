@@ -62,24 +62,31 @@
 
 // src/components/ExperienceSection.js
 import React from "react";
-import { Container, Heading, Stack } from "@chakra-ui/react";
+import { Container, Heading, Stack, Center } from "@chakra-ui/react";
 import ExperienceAccordionItem from "./ExperienceAccordionItem";
 
 export default function ExperienceSection() {
   return (
     <Container maxW="none" py={10} minH="100vh" id="experience">
-      <Heading
-        as="h1"
-        fontSize={{ base: "4rem", md: "4rem" }}
-        whiteSpace="nowrap"
-        mb={4}
-        py={{ base: 2, md: 4 }}
-        color="lighterjeans"
+      <Center>
+        <Heading
+          as="h1"
+          fontSize={{ base: "4rem", md: "4rem" }}
+          whiteSpace="nowrap"
+          mb={4}
+          py={{ base: 2, md: 4 }}
+          color="lighterjeans"
+        >
+          Experience
+        </Heading>
+      </Center>
+      {/* <Stack spacing={6} py="4rem"> */}
+      <Stack
+        spacing={4}
+        justify="center"
+        px={{ base: "1rem", md: "20rem" }}
+        py={{ base: "2.5rem", md: "5rem" }}
       >
-        Experience
-      </Heading>
-
-      <Stack spacing={6} py="4rem">
         <ExperienceAccordionItem
           date="Aug 2024 - Dec 2024"
           title="Software Verification Engineer"

@@ -64,6 +64,7 @@ export default function ExperienceAccordionItem({
                 spacing={2}
                 ml={{ base: 0, md: "auto" }}
                 mt={{ base: 2, md: 0 }}
+                justifyContent={{ base: "none", md: "flex-end" }}
               >
                 {skills.map((skill) => (
                   <WrapItem key={skill}>

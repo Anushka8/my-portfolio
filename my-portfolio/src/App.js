@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
+import Footer from "./components/Footer";
 
 const system = createSystem(defaultConfig, customConfig);
 
@@ -16,6 +17,7 @@ export default function App() {
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection />
+      <Footer />
     </ChakraProvider>
   );
 }

@@ -55,7 +55,7 @@
 
 // src/components/ProjectsSection.js
 import React from "react";
-import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid, Center } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
@@ -92,17 +92,27 @@ export default function ProjectsSection() {
 
   return (
     <Container maxW="none" py={16} bg="ghostwhite" id="projects">
-      <Heading
-        as="h1"
-        fontSize={{ base: "4rem", md: "4rem" }}
-        whiteSpace="nowrap"
-        mb={4}
-        py={{ base: 2, md: 4 }}
-        color="lighterjeans"
+      <Center>
+        <Heading
+          as="h1"
+          fontSize={{ base: "4rem", md: "4rem" }}
+          whiteSpace="nowrap"
+          mb={4}
+          py={{ base: 2, md: 4 }}
+          color="lighterjeans"
+        >
+          Projects
+        </Heading>
+      </Center>
+      {/* <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} py="2rem"> */}
+      <SimpleGrid
+        SimpleGrid
+        columns={{ base: 1, md: 2, lg: 1 }}
+        spacing={4}
+        justify="center"
+        px={{ base: "1rem", md: "20rem" }}
+        py={{ base: "2.5rem", md: "5rem" }}
       >
-        Projects
-      </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} py="2rem">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

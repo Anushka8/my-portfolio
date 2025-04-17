@@ -71,7 +71,7 @@
 
 // src/components/ProjectCard.js
 import React from "react";
-import { Box, Image, Heading, Text, Badge, Stack } from "@chakra-ui/react";
+import { Box, Heading, Text, Badge, Stack } from "@chakra-ui/react";
 
 export default function ProjectCard({
   title,
@@ -98,7 +98,7 @@ export default function ProjectCard({
       m={4}
     >
       {/* Project image */}
-      <Image src={image} alt={title} w="100%" h="200px" objectFit="cover" />
+      {/* <Image src={image} alt={title} w="100%" h="200px" objectFit="cover" /> */}
 
       <Box p={4}>
         {/* Project Title */}

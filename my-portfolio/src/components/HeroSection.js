@@ -14,12 +14,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function HeroSection() {
   return (
-    <Container
-      maxW="container.xl"
-      py={{ base: 10, md: 14 }}
-      minH="100vh"
-      id="about"
-    >
+    <Container maxW="none" py={{ base: 10, md: 14 }} minH="100vh" id="about">
       <Flex
         direction={{ base: "column", md: "row" }}
         align="center"
