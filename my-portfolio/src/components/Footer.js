@@ -1,4 +1,3 @@
-// src/components/Footer.js
 import React from "react";
 import {
   Box,
@@ -14,7 +13,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <Box as="footer" bg="gray.800" color="white" py={6}>
+    <Box as="footer" bg="gray.800" color="white" py={6} id="contact">
       <Container maxW="none">
         <Stack
           direction={{ base: "column", md: "row" }}

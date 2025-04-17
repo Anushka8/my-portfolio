@@ -1,4 +1,3 @@
-// src/components/ExperienceAccordionItem.js
 import React from "react";
 import {
   Box,
@@ -24,8 +23,6 @@ export default function ExperienceAccordionItem({
         <Accordion.ItemTrigger asChild>
           <Box
             as="button"
-            // h="8rem"
-            // minW="100vh"
             textAlign="left"
             p={4}
             cursor="pointer"
@@ -48,18 +45,6 @@ export default function ExperienceAccordionItem({
               </Box>
 
               {/* Right side: Skills */}
-              {/* <Stack
-                direction="row"
-                spacing={2}
-                ml={{ base: 0, md: "auto" }} // pushes badges to the right on md+
-                mt={{ base: 2, md: 0 }} // adds top margin on small screens so it doesn't crowd the text
-              >
-                {skills.map((skill) => (
-                  <Badge key={skill} variant="subtle" colorScheme="blue">
-                    {skill}
-                  </Badge>
-                ))}
-              </Stack> */}
               <Wrap
                 spacing={2}
                 ml={{ base: 0, md: "auto" }}
